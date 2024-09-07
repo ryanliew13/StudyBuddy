@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">StudyApp-StudyBuddy</string>
+    <string name="settings_saved">Settings saved successfully</string>
+    <string name="invalid_input">Please enter valid positive numbers for all durations</string>
+    <string name="start_focus_mode" />
+    <string name="_25_00" />
+    <string name="stop_focus_mode" />
+    <string name="focus_icon_desc" />
+    <string name="_00_00" />
+
+    <style name="Theme.Dictionary" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#21173E"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timer Settings"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Pomodoro Length Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pomodoro Length (minutes)"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/pomodoroLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <!-- Short Break Length Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Short Break Length (minutes)"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/shortBreakLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <!-- Long Break Length Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Long Break Length (minutes)"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/longBreakLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveSettingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Settings"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

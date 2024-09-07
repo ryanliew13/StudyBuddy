@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "331984535796",
+    "project_id": "studyapp-ryan-7dbee",
+    "storage_bucket": "studyapp-ryan-7dbee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331984535796:android:d20e4036342c57be989ea1",
+        "android_client_info": {
+          "package_name": "com.example.studyapp_ryan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9dn56AXS2hsKdAmK8jCYldclXsXehxKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

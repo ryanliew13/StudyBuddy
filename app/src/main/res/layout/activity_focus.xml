@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFF00"
+    android:gravity="center">
+
+    <!-- Focus Now Label -->
+    <TextView
+        android:id="@+id/focusNowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Focus Now!"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000000" />
+
+    <!-- Focus Icon -->
+    <ImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/focusNowTextView"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/focus_icon_desc"
+        android:src="@raw/lofi"/>
+
+    <TextView
+        android:id="@+id/focusTimerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_25_00"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:layout_below="@id/gifImageView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black" />
+
+    <!-- Additional Timer View -->
+    <TextView
+        android:id="@+id/additionalTimerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_00_00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/focusTimerTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white" />
+
+    <!-- Time Picker Button -->
+    <Button
+        android:id="@+id/timePickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/additionalTimerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#000000"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:elevation="4dp"
+        android:text="Select Time" />
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/startFocusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePickerButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#000000"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:elevation="4dp"
+        android:text="Start"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Stop Button -->
+    <Button
+        android:id="@+id/stopFocusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startFocusButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#000000"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:elevation="4dp"
+        android:text="Stop"
+        android:enabled="false" />
+
+</RelativeLayout>
