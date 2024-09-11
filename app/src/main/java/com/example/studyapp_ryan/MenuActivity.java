@@ -24,13 +24,6 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         goalCard = findViewById(R.id.goalCard);
-        dictionaryCard = findViewById(R.id.dictionaryCard);
-        quizCard = findViewById(R.id.quizCard);
-        timerCard = findViewById(R.id.timerCard);
-        focusCard = findViewById(R.id.focusCard);
-        logo = findViewById(R.id.amazonImage);
-
-        goalCard = findViewById(R.id.goalCard);
         goalCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,6 +64,7 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
        showMenu();
     }
 
